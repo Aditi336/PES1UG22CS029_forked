@@ -3,13 +3,13 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-        sh 'mvn clean install'
+        sh 'g++ -o PES1UG22CS029-1 main.cpp'
         echo 'Build Stage Successful'
       }
     }
     stage('Test'){
       steps{
-        sh 'mvn test'
+        sh './PES1UG22CS029-1'
         echo 'Test Stage Successful'
         post{
           always{
