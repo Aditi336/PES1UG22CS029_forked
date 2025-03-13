@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'g++ -o PES1UG22CS029-1 main/main.cpp'  // Ensure correct path
+        sh 'g++ -o PES1UG22CS029-1 main/hello.cpp'  // Ensure correct path
         echo 'Build Stage Successful'
       }
     }
